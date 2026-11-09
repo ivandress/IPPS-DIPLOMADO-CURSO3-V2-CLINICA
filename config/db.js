@@ -1,9 +1,11 @@
 import mongoose from 'mongoose'
 
-
-const MONGODB_URI = ''
-
-export const conectar = async () => {
-    await mongoose.connect( MONGODB_URI )
-    consolelog('conectado a la bd')
+export const conectar = async() => {
+    try {
+        await mongoose.connect(process.env.MONGODB_URI)
+        console.log('Conectado a la BD')
+    } catch (error) {
+        console.error('Error al conectar a la BD:', error.message)
+        process.exit(1)
+    }
 }
