@@ -26,4 +26,5 @@ El servidor queda en http://localhost:3001
 
 ## Video
 
-(enlace de YouTube)
+Enlace: https://www.youtube.com/watch?v=JxQtDIyfMAs
+Nota: Pido disculpas porque me pasé en minutaje
